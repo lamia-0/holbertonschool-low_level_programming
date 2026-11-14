@@ -37,6 +37,16 @@ int main(void) {
             value = num1 - num2;
             printf("Result: %d\n", value);
         }
+        else if (a == 3) {
+            printf("A: ");
+            scanf("%d", &num1);
+
+            printf("B: ");
+            scanf("%d", &num2);
+
+            value = num1 * num2;
+            printf("Result: %d\n", value);
+        }
         else if (a > 4 || a < 0) {
             printf("Invalid choice\n");
         }

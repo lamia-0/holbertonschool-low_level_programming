@@ -4,7 +4,7 @@ int main(void)
 
 {
 
-        int a;
+        int a, num1, num2;
 
         while(1)
 
@@ -36,15 +36,22 @@ scanf("%d", &a);
 
                 }
 
-                else if (a > 4 || a < 0)
+		else if (a == 1)
+{
+    printf("A: ");
+    scanf("%d", &num1);
+    
+    printf("B: ");
+    scanf("%d", &num2);
+    
+    int value = num1 + num2;
+    printf("Result: %d\n", value);
+}
+else if (a > 4 || a < 0)
+{
+    printf("Invalid choice\n");
+}
 
-        {
-
-        printf("Invalid choice\n");
-
-        }
-
-	}
-	return 0;
+return 0;
 
 }
